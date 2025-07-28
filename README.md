@@ -5,7 +5,9 @@ MyGPT is a simple and powerful AI chat platform where you can have natural conve
 First setup .env file like this-
 
 PORT=3000
+
 API_KEY=PASTE-YOUR-API-KEY
+
 MONGO_URL=mongodb://localhost:27017/chatDB
 
 and that's it
