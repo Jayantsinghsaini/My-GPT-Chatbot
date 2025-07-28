@@ -66,7 +66,7 @@ function input() {
     preResponse.style.backgroundColor = '#212121'
     Super.appendChild(preResponse); 
      
-    fetch('http://192.168.115.175:3000/temp-chat', {
+    fetch('http://localhost:3000/temp-chat', {
         method: 'POST',
         headers: { 'Content-Type': 'text/plain' },
         body: input.value,
