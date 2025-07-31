@@ -37,11 +37,6 @@ const md = window.markdownit({
     }
 }); 
 
-function toggleSidebar() {
-    const sidebar = document.querySelector('.chat-menu');
-    sidebar.classList.toggle('open');
-}
-
 function input() {
     setTimeout(() => {
         window.scrollTo({
