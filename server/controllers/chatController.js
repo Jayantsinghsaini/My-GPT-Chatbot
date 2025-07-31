@@ -6,12 +6,12 @@ let history = [];
 let chatModel;
 let collection = '';
 
-const ai = new GoogleGenAI({ apiKey: 'AIzaSyAMNOT1CIZb8bBGiLE7FmLHCXPe-ndnW-A' });
+const ai = new GoogleGenAI({ apiKey: 'paste your gemini api key here' });
 const ConfigModel = mongoose.model('config-collections', mySchema);
 
 export const initializeApp = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/chatDB');
+        await mongoose.connect('paste your mongoDB connection string');
         console.log('Connected to DB');
         const data = await ConfigModel.findOne({}, { chat: 1, _id: 0 }).lean();
         const chatNum = data?.chat ?? 0;
